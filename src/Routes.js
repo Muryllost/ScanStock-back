@@ -2,7 +2,7 @@ import express, { Router } from "express";
 import sql from "./bd.js";
 import { CompararHash, CriarHash } from "./utils.js";
 
-const routes = express.Router();
+const router = express.Router();
 
 //* Login de Operadores
 routes.post("/login", async (req, res) => {
@@ -128,4 +128,4 @@ routes.delete("/movimentos", async (req, res) => {
   }
 });
 
-export default routes;
+export default router;
